@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Mixtape Webpage</title>
+    <link rel="stylesheet" href="main/main.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <h1>Music Mixtape Webpage</h1>
+    <!--Start of container for Music page-->
+    <div class="container-guitars">
+        <div class="row">
+            <div class="column">
+            <img src= "main/images/old_man.jpeg" alt="" style="width:100%">
+            </div>
+        <div class="row">
+            <div class="columnR">
+            <img src= "main/images/les_paul.jpeg" alt="" style="width:100%">
+            </div>
+        <!-- add onclick eventlistner/music stop-->
+        <div class="gallery"> <!--add onclick event listner for figure,/album covers-->
+            <figure class="gallery__item gallery__item--1" id="fig1" onclick="event.stopPropagation(); 
+            getSong(this.id, event)">
+                <img class="gallery__img" src="../main/images/Rainbow_kitten.jpg" alt="It's Called: Freefall">
+                <h3 text-align="center">Rainbow Kitten Suprise - FreeFall</h3>
+            </figure>
+            <figure class="gallery__item gallery__item--2" id="fig2" onclick="event.stopPropagation(); 
+            getSong(this.id, event)">
+                <img class="gallery__img" src="../main/images/Julien_baker.jpg" alt="Faith Healer">
+                <h3 text-align="center">Julien Baker - Faith Healer</h3>
+            </figure>
+            </figure>
+            <figure class="gallery__item gallery__item--3" id="fig3" onclick="event.stopPropagation(); 
+            getSong(this.id, event)">
+                <img class="gallery__img" src="../main/images/radiohead.jpg" alt="Idioteque">
+                <h3 text-align="center">Raidohead - Idioteque</h3>
+            </figure>
+            </figure>
+            <figure class="gallery__item gallery__item--4" id="fig4" onclick="event.stopPropagation(); 
+            getSong(this.id, event)">
+                <img class="gallery__img" src="../main/images/tyler_childress.jpg" alt="Follow You To Virgie">
+                <h3 text-align="center">Tyler Childress - Follow you to Virgil</h3>
+            </figure>
+            </figure>
+            <figure class="gallery__item gallery__item--5" id="fig5" onclick="event.stopPropagation(); 
+            getSong(this.id, event)">
+                <img class="gallery__img" src="../main/images/Vulpeck.jpg"  alt="Cory Wong">
+                <h3 text-align="center">Vulpeck - Corey Wong</h3>
+            </figure>
+            </figure>
+            <figure class="gallery__item gallery__item--6" id="fig6" onclick="event.stopPropagation(); 
+            getSong(this.id, event)">
+                <img class="gallery__img" src="../main/images/Jim_croce.jpg" alt="New York's Not My Home">
+                <h3 text-align="center">Jim Croce - New York's not my Home</h3>
+            </figure>
+            </figure>
+            <figure class="gallery__item gallery__item--7" id="fig7" onclick="event.stopPropagation(); 
+            getSong(this.id, event)">
+                <img class="gallery__img" src="../main/images/beatles.jpg" alt="Hey Bulldog">
+                <h3 text-align="center">Beatles - Hey Bulldog</h3>
+            </figure>
+            </figure>
+            <figure class="gallery__item gallery__item--8" id="fig8" onclick="event.stopPropagation(); 
+            getSong(this.id, event)">
+                <img class="gallery__img" src="../main/images/lead_belly.jpg" alt="Goodnight, Irene">
+                <h3 text-align="center">Lead Belly - Goodnight, Irene</h3>
+            </figure>
+            </figure>
+            <figure class="gallery__item gallery__item--9" id="fig9" onclick="event.stopPropagation(); 
+            getSong(this.id, event)">
+                <img class="gallery__img" src="../main/images/alice_in_chains.jpg" alt="Rooster">
+                <h3 text-align="center">Alice in Chains - Rooster</h3>
+            </figure>
+            </figure>
+
+
+        </div>
+        <button onclick="stopSnippet()">Stop Song</button>
+    </div>
+</body>
+</html>
